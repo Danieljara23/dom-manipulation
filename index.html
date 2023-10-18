@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Manipulation example</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section class="search-and-buttons-container">
+      <div class="search-bar">
+        <input type="text" placeholder="Search" id="seachInput">
+        <button>Buscar</button>
+      </div>
+      <div class="buttons-wrapper">
+        <button class="filter-button">Done</button>
+        <button class="filter-button">Pending</button>
+        <button class="filter-button">In-progress</button>
+        <button class="filter-button">Clear</button>
+      </div>
+    </section>
+    <section class="tasks-container" id="container">
+      <article class="task-item">
+        <h3>Make the dishes</h3>
+        <p>Status: <span class="status-circle done">Done</span></p>
+      </article>
+      <article class="task-item">
+        <h3>Make the dishes</h3>
+        <p>Status: <span class="status-circle pending">pending</span></p>
+      </article>
+      <article class="task-item">
+        <h3>Make the dishes</h3>
+        <p>
+          Status: <span class="status-circle in-progress">In progress</span>
+        </p>
+      </article>
+      <article class="task-item">
+        <h3>Make the dishes</h3>
+        <p>Status: <span class="status-circle pending">Pending</span></p>
+      </article>
+    </section>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
